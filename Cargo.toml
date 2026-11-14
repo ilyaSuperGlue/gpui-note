@@ -1,0 +1,25 @@
+[package]
+name = "noters"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gpui-kit = { version = "0.9.1", features = ["syntect"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+dirs = "5"
+gpui-pre-reqwest-client = "=0.3.12"
+
+[patch.crates-io]
+#patch because of girhub issue not merge yet
+gpui-pre-macos = { path = "vendor/gpui-pre-macos-0.3.12" }
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[package.metadata.bundle]
+name = "Noters"
+identifier = "com.ilyasuperglue.noters"
+short_description = "A note app that can render markdown"
+category = "public.app-category.productivity"
+osx_minimum_system_version = "13.0"
