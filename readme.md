@@ -32,6 +32,7 @@ Array.from({ length: 100 }, (_, index) => fizzbuzz(index + 1));
 <div>
   <h3 style="color:blue;">My bini</h3>
   <img style="width:50%;" src="https://safebooru.org/thumbnails/4165/thumbnail_160fa22e7eb3b86604d8e5665caa0291280dffd6.jpg" />
+  <br>
   <a href="https://safebooru.org/index.php?page=post&s=view&id=7135272">source</>
 </div>
 
